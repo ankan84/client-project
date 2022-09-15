@@ -164,7 +164,7 @@ const Home_navbar = () => {
       }}></MenuIcon>
       </div>
    
-        <div className='location'>
+        {/* <div className='location'>
           <i class="fa-solid fa-location-pin" id="icon"></i>
           <h6>1010 Avenue,New York,USA-2029</h6>
         </div>
@@ -175,7 +175,7 @@ const Home_navbar = () => {
         <div className='clock'>
           <i class="fa-solid fa-clock" id="icon"></i>
           <h6>Mon-Sat,8.00-18.00.Sunday Closed</h6>
-        </div>
+        </div> */}
 
       </div>
       <div className='navbar1' ref={bar}>
