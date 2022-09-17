@@ -5,50 +5,50 @@ import google_pic from './gg-pic3.png'
 import fb_pic from './ff_pic.png'
 import axios from 'axios'
 import url from '../config'
-import {signInWithGoogle,signInWithFacebook} from '../firebase'
+import { signInWithGoogle, signInWithFacebook } from '../firebase'
 import { useNavigate } from 'react-router-dom'
 
 const Multipleinputs = () => {
-    const navigate=useNavigate();
+    const navigate = useNavigate();
 
     const [userLogin, setUserLogin] = useState({
         email: "",
         password: ""
     });
 
-   
+
 
     const handleInput = (e) => {
         const name = e.target.name;
         const value = e.target.value;
-       
+
         setUserLogin({ ...userLogin, [name]: value });
 
     }
 
-    function userlogin(status){
-        
-        if(status===200){
-           navigate('/')
-        }else{
+    function userlogin(status) {
+       
+        if (status === 200) {
+            navigate('/')
+        } else {
             alert('somthings wrong ')
         }
     }
     const handleSubmit = (e) => {
         e.preventDefault();
-     
-    
-    
-        axios.post('/registration/user/signin',{email:userLogin.email,password:userLogin.password}).then((res)=>{
-            if(res.status===200){
+
+
+
+        axios.post('/registration/user/signin', { email: userLogin.email, password: userLogin.password }).then((res) => {
+            if (res.status === 200) {
                 navigate('/')
-            }else {
+            } else {
                 alert('somthings wrong ')
             }
-        }).catch((e)=>{
+        }).catch((e) => {
             alert('somthings wrong ')
         })
-     
+
 
     }
 
@@ -104,29 +104,30 @@ const Multipleinputs = () => {
                     <p className='or_login'>Or login with</p>
                     <div className='icons'>
                         <div className='icon1'>
-                            <button className='gg' type="submit" onClick={()=>{
-                                signInWithGoogle(userlogin);}
+                            <button className='gg' type="submit" onClick={() => {
+                                signInWithGoogle(userlogin);
+                            }
                             }>
-                                <img src={google_pic} alt="Submit"/>
+                                <img src={google_pic} alt="Submit" />
                             </button></div>
 
                         <div className='icon1'>
-                            <button className='fb' type="submit"  onClick={()=>{
-                                signInWithFacebook(userlogin)
+                            <button className='fb' type="submit" onClick={() => {
+                                alert('Try another mathod')
                             }}>
                                 <img src={fb_pic} alt="Submit" />
                             </button>
                         </div>
 
                     </div>
-                    <button className='create frgt_div' onClick={()=>{navigate('/createAccount')}} type='submit' > Create your Account &#xf061;</button>
+                    <button className='create frgt_div' onClick={() => { navigate('/createAccount') }} type='submit' > Create your Account &#xf061;</button>
 
 
 
                 </div>
             </div>
         </div >
-        
+
     )
 }
 

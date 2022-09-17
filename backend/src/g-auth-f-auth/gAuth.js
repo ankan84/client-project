@@ -51,7 +51,7 @@ auth.post('/g_auth/login', async (req, res) => {
 
 })
 
-auth.post('/g_auth/check_user', async (req, res) => {
+auth.get('/g_auth/check_user', async (req, res) => {
 
    try {
 

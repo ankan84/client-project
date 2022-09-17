@@ -13,13 +13,13 @@ const Home_navbar = () => {
   const [auth_profile, setAuthProfile] = useState()
   const [profile,setProfile]=useState()
   useEffect(() => {
-    axios.post('/registration/g_auth/check_user').then((res) => {
+    axios.get('/registration/g_auth/check_user').then((res) => {
       setAuthProfile(res.data)
     }).catch((e) => {
 
     })
     axios.get('/registration/check_user').then((res) => {
-      
+      if(res.status===200)
       setProfile(res.data)
     }).catch((e) => {
 
@@ -104,8 +104,12 @@ const Home_navbar = () => {
 
             <div className='submenu'>
               <ul>
-                <li>GST Registration</li>
-                <li>GST Filing</li>
+              <Link to='/gst_registration'>
+              <li>GST Registration</li>
+              </Link>
+              <Link to='/gst_filling'>
+              <li>GST Filing</li>
+              </Link>
 
 
               </ul>
@@ -132,10 +136,13 @@ const Home_navbar = () => {
 
         {
           auth_profile|| profile ? (<>
-          <div className="navbar-profile"><AccountBoxIcon></AccountBoxIcon><p>{auth_profile || profile}</p> <LogoutIcon onClick={()=>{
+          <div className="navbar-profile"><AccountBoxIcon></AccountBoxIcon><p>{(auth_profile || profile).substring(0,10)}..</p> <LogoutIcon onClick={()=>{
            
             axios.post('registration/logout').then((res)=>{
-               if(res.status===200)  window.location.reload();
+           
+               if(res.status===200) {
+                window.location.reload();
+               } 
             })
             window.location.reload();
             
@@ -233,8 +240,13 @@ const Home_navbar = () => {
 
             <div className='submenu'>
               <ul>
-                <li>GST Registration</li>
-                <li>GST Filing</li>
+              <Link to='/gst_registration'>
+              <li>GST Registration</li>
+              </Link>
+              <Link to='/gst_filling'>
+              <li>GST Filing</li>
+              </Link>
+                
 
 
               </ul>
@@ -261,7 +273,7 @@ const Home_navbar = () => {
 
         {
           auth_profile|| profile ? (<>
-          <div className="navbar-profile"><AccountBoxIcon></AccountBoxIcon><p>{auth_profile || profile}</p> <LogoutIcon onClick={()=>{
+          <div className="navbar-profile"><AccountBoxIcon></AccountBoxIcon><p>{(auth_profile || profile).substring(0,10)}..</p> <LogoutIcon onClick={()=>{
            
             axios.post('registration/logout').then((res)=>{
                if(res.status===200)  window.location.reload();

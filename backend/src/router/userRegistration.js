@@ -79,6 +79,7 @@ router.post('/user/signin',async(req, res)=> {
 
 router.get('/check_user',verify,async(req,res)=>{
     try{
+        
         let data=await user_data.findOne({_id:req.dataFromMiddleware1})
         
         res.status(200).send(data.name)
@@ -89,15 +90,21 @@ router.get('/check_user',verify,async(req,res)=>{
 
 })
 
-router.post('/logout',(req,res)=>{
+router.post('/logout',async(req,res)=>{
+
+    try{
+        console.log("hello")
+       
+            res.cookie("accessToken","#none", {
+               httpOnly:false
+            });
+            res.send()
+    }catch(e){
+        res.status(400).send()
+    }
    
-    res.clearCookie('accessToken')
-    res.status(200).send();
+   
 })
-
-
-
-
 
 
 
