@@ -21,12 +21,7 @@ const Gstregis_form = () => {
   const [hsn_code,sethsn_code]=useState();
   const [office_address,setoffice_address]=useState();
   const [residential_address,setresidential_address]=useState();
-
-
-
-
   
-   
 
    let  formdata=new FormData();
    formdata.append('name_business',name_business);
@@ -69,21 +64,21 @@ const Gstregis_form = () => {
         alert("Unsuccessfull")
     })
     
-    setname_business("");
-    setnature_business("")
-    setphone_no("");
-    setemail("")
-    setpan_card("")
-    setaadher_card("")
-    setproprietor_photo("")
-    setrent_deed("")
-    setcurrent_bill("")
-    setbank_passbook("")
-    setaadhar_property("")
-    setmunicipal_tax("")
-    sethsn_code("")
-    setoffice_address("")
-    setresidential_address("")
+    // setname_business("");
+    // setnature_business("")
+    // setphone_no("");
+    // setemail("")
+    // setpan_card("")
+    // setaadher_card("")
+    // setproprietor_photo("")
+    // setrent_deed("")
+    // setcurrent_bill("")
+    // setbank_passbook("")
+    // setaadhar_property("")
+    // setmunicipal_tax("")
+    // sethsn_code("")
+    // setoffice_address("")
+    // setresidential_address("")
 
 
 
@@ -120,19 +115,19 @@ const Gstregis_form = () => {
             </div>
             <div className='field'>
                 <h5  style={{color:"black",fontWeight:"bolder"}}>Nature of the Business</h5>
-                <input type="text" className='inp'   onChange={(e)=>{
+                <input type="text" className='inp' value={nature_business}   onChange={(e)=>{
                      setnature_business(e.target.value)
                 }}></input>
             </div>
             <div className='field'>
                 <h5  style={{color:"black",fontWeight:"bolder"}}>Phone Number</h5>
-                <input type="number" className='inp'  onChange={(e)=>{
+                <input type="number" className='inp' value={phone_no}  onChange={(e)=>{
                      setphone_no(e.target.value)
                 }} ></input>               
             </div>
             <div className='field'>
                 <h5  style={{color:"black",fontWeight:"bolder"}}>Email</h5>
-                <input type="email" className='inp' 
+                <input type="email" className='inp' value={email}
                 onChange={(e)=>{
                     setemail(e.target.value)
                 }}
@@ -146,7 +141,7 @@ const Gstregis_form = () => {
             </div>
             <div className='field'>
                 <h5  style={{color:"black",fontWeight:"bolder"}}>Aadhar Card Xerox</h5>
-                <input type="file" className='inp'  onChange={(e)=>{
+                <input type="file" className='inp'   onChange={(e)=>{
                     setaadher_card(e.target.files[0])
                 }}></input>               
             </div>
@@ -167,43 +162,43 @@ const Gstregis_form = () => {
             </div>
             <div className='field'>
                 <h5  style={{color:"black",fontWeight:"bolder"}}>Current bill of the registered office</h5>
-                <input type="file" className='inp'  onChange={(e)=>{
+                <input type="file" className='inp'   onChange={(e)=>{
                      setcurrent_bill(e.target.files[0])
                 }}></input>
             </div>
             <div className='field'>
                 <h5  style={{color:"black",fontWeight:"bolder"}}>Bank passbook of the proprietor</h5>
-                <input type="file" className='inp'   onChange={(e)=>{
+                <input type="file" className='inp'  onChange={(e)=>{
                      setbank_passbook(e.target.files[0])
                 }}></input>
             </div>
             <div className='field'>
                 <h5  style={{color:"black",fontWeight:"bolder"}}>Aadhar Card of the Property Owner</h5>
-                <input type="file" className='inp' onChange={(e)=>{
+                <input type="file" className='inp'  onChange={(e)=>{
                      setaadhar_property(e.target.files[0])
                 }}></input>
             </div>
             <div className='field'>
                 <h5  style={{color:"black",fontWeight:"bolder"}}>Municipal Tax Receipt</h5>
-                <input type="file" className='inp'  onChange={(e)=>{
+                <input type="file" className='inp'   onChange={(e)=>{
                      setmunicipal_tax(e.target.files[0])
                 }} ></input>
             </div>
             <div className='field'>
                 <h5  style={{color:"black",fontWeight:"bolder"}}>HSN codes of the products selling or SAC codes of the services providing</h5>
-                <input type="text" className='inp'  onChange={(e)=>{
+                <input type="text" className='inp' value={hsn_code} onChange={(e)=>{
                      sethsn_code(e.target.value)
                 }}></input>
             </div>
             <div className='field'>
                 <h5  style={{color:"black",fontWeight:"bolder"}}>Complete address of the registered office</h5>
-                <input type="text" className='inp'  onChange={(e)=>{
+                <input type="text" className='inp' value={office_address} onChange={(e)=>{
                      setoffice_address(e.target.value)
                 }}></input>
             </div>
             <div className='field'>
                 <h5  style={{color:"black",fontWeight:"bolder"}}>Complete Residential address of the proprietor</h5>
-                <input type="text" className='inp'  onChange={(e)=>{
+                <input type="text" className='inp' value={residential_address}  onChange={(e)=>{
                      setresidential_address(e.target.value)
                 }}></input>
             </div>

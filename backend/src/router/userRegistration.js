@@ -17,7 +17,7 @@ router.post('/user/signup', async(req, res)=> {
         let email_check=await user_data.findOne({email});
         if(email_check){
       
-            res.status(400).json({mess:"user already registed"})
+            res.status(203).json({mess:"user already registed"})
         }else{
 
             

@@ -70,24 +70,24 @@ const Gst_filing = () => {
             alert("Unsuccessfull")
         })
        
-        setyour_name("")
-        setdob("")
-        setmob_number("")
-        setemail("")
-        setfather_name("")
-        setpan_number("")
-        setpan_photo("")
-        setbank_statement("")
-        setlic_premium("")
-        setmedical_insurance("")
-        setaadhar_number("")
-        setaadhar_photo("")
-        setloan_statement("")
-        setdonation_receipt("")
-        setproperty("")
-        setcurr_address("")
-        setpermanent_address("")
-        setform_16("")
+        // setyour_name("")
+        // setdob("")
+        // setmob_number("")
+        // setemail("")
+        // setfather_name("")
+        // setpan_number("")
+        // setpan_photo("")
+        // setbank_statement("")
+        // setlic_premium("")
+        // setmedical_insurance("")
+        // setaadhar_number("")
+        // setaadhar_photo("")
+        // setloan_statement("")
+        // setdonation_receipt("")
+        // setproperty("")
+        // setcurr_address("")
+        // setpermanent_address("")
+        // setform_16("")
 
 
 
@@ -192,7 +192,7 @@ const Gst_filing = () => {
 
                     <div className='field'>
                         <h5 style={{ color: "black", fontWeight: "bolder" }}>AADHAR Number</h5>
-                        <input type="number" className='inp'  name='aadhar_number' onChange={(e) => {
+                        <input type="number" className='inp' value={aadhar_no}  name='aadhar_number' onChange={(e) => {
                             setaadhar_number(e.target.value)
                         }}></input>
                     </div>
@@ -225,21 +225,21 @@ const Gst_filing = () => {
                     <div className='field pt-4'>
                         <h5 style={{ color: "black", fontWeight: "bolder" }}>Any Properties and Assests registered
                             on yor name</h5>
-                        <input type="text" className='inp' name='property' onChange={(e) => {
+                        <input type="text" className='inp' value={property} name='property' onChange={(e) => {
                             setproperty(e.target.value)
                         }}></input>
                     </div>
 
                     <div className='field'>
                         <h5 style={{ color: "black", fontWeight: "bolder" }}>Complete Current Address</h5>
-                        <input type="text" className='inp'  name='curr_address' onChange={(e) => {
+                        <input type="text" className='inp'  name='curr_address' value={curr_address} onChange={(e) => {
                             setcurr_address(e.target.value)
                         }}></input>
                     </div>
 
                     <div className='field'>
                         <h5 style={{ color: "black", fontWeight: "bolder" }}>Complete Permanent Address</h5>
-                        <input type="text" className='inp' name='permanent_address' onChange={(e) => {
+                        <input type="text" className='inp' name='permanent_address' value={permanent_address} onChange={(e) => {
                             setpermanent_address(e.target.value)
                         }}></input>
                     </div>

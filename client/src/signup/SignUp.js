@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// import * as React from 'react';
 import "./signup.css"
 import axios  from "axios";
 import url from "../config";
@@ -20,14 +19,19 @@ const Signup = () => {
 
     
         if(password===Re_password){
-        axios.post(`${url}/registration/user/signup`,{name,phone_no,email,password}).then((res)=>{
+        axios.post('/registration/user/signup',{name,phone_no,email,password}).then((res)=>{
             if(res.status===201){
                 alert('Successfull login now')
                 navigate('/login')
+            }else if(res.status===203){
+                alert('Duplicate email !')
             }
-        }).catch(e=>alert('somethings wrong'))}else{
-            alert('Password wrong')
-        }
+        }).catch((e)=>{
+             alert('somethigs wrong !')
+        })
+    }else{
+        alert('password wrong !')
+    }
        
         
     }
