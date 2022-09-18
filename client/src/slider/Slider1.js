@@ -4,7 +4,12 @@ import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 
 
 import pic1 from '../slider/images/slider1.jpg'
+import { useNavigate } from 'react-router-dom';
 function Slider1() {
+  const navigate=useNavigate();
+  const contact=()=>{
+    navigate("/contact");
+  }
   return (
      <>
     <div className="home-main-slider">
@@ -21,7 +26,7 @@ function Slider1() {
             
            <div className="slider1-main-btn">
            <button className='btn1'>Read more <KeyboardArrowRightIcon></KeyboardArrowRightIcon></button>
-           <button className='btn2'>Contact us <KeyboardArrowRightIcon></KeyboardArrowRightIcon></button>
+           <button className='btn2' onClick={contact}>Contact us <KeyboardArrowRightIcon></KeyboardArrowRightIcon></button>
            <div></div>
            <div></div>
            </div>

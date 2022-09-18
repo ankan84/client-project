@@ -28,11 +28,11 @@ function Registration() {
             </div>
             <div className="registration pt-3">
 
-                <Item1 data={apiData[0]}></Item1>
-                <Item1 data={apiData[1]} type="reverse"></Item1>
-                <Item1 data={apiData[2]}></Item1>
-                <Item1 data={apiData[3]} type="reverse"></Item1>
-                <Item1 data={apiData[4]}></Item1>
+                <section id="prop"><Item1 data={apiData[0]}></Item1></section>
+                <section id="msme"><Item1 data={apiData[1]} type="reverse"></Item1></section>
+                <section id="par_reg"><Item1 data={apiData[2]}></Item1></section>
+                <section id="pvt"><Item1 data={apiData[3]} type="reverse"></Item1></section>
+                <section id="prp_tax"><Item1 data={apiData[4]}></Item1></section>
                 
                 
             </div>

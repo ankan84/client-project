@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contact{
+    width: 100vw;
+    height: 100vh;
+   
+}
+.contact .head{
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact .head h1{
+    padding-bottom: 5px;
+    
+    border-bottom: 5px double black;
+    color: rgb(4, 4, 54);
+    font-weight: bolder;
+}
+.contact .content{
+    width: 70vw;
+    height: 50vh;
+    display: flex;
+margin: auto;
+box-shadow: 1px 1px 5px gray,-1px -1px 5px gray;
+}
+.contact .content img{
+    width: 35vw;
+    height: 50vh;
+}
+.contact .content .right{
+    width: 35vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    color: rgb(4, 4, 54);
+    font-weight: bolder;
+}

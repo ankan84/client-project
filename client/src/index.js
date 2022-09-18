@@ -9,6 +9,11 @@ import Signup from './signup/SignUp';
 import Gst_filing from './gst filling/Gst_filing';
 import Services from './Services';
 import Compilance from './Compilance';
+import Contact from './contact/Contact';
+import Trademark from './Trademark';
+import Gst from './gst/Gst';
+import Registration from './registration/Registration';
+import Admin from './admin/Admin';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -21,7 +26,11 @@ root.render(
     <Route path="/gst_filling" element={<Gst_filing/>}></Route>
     <Route path="/services" element={<Services/>}></Route>
     <Route path="/compilance" element={<Compilance/>}></Route>
-    
+    <Route path="/contact" element={<Contact/>}></Route>
+    <Route path="/trademark" element={<Trademark/>}></Route>
+    <Route path="/gst" element={<Gst/>}></Route>
+    <Route path="/registration" element={<Registration/>}></Route>
+    <Route path="/adminpanel" element={<Admin/>}></Route>
   </Routes>
  </BrowserRouter>
 );

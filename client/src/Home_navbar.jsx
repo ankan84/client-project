@@ -52,55 +52,54 @@ const Home_navbar = () => {
     </div>
     <div className="navigation-manu-lower">
     <ul>
-          <li>Home</li>
+          <a href='#' style={{textDecoration:"none"}}><li style={{color:"white"}}>Home</li></a>
           {/* /-----------------------------------------------------------services-------------------------------------------------/ */}
-          <li>Services<span><i class="fa-solid fa-chevron-down" id="menu_icon"></i></span>
+          <li><Link to={'/services'}><span style={{color:"white"}}>Services</span> </Link><span><i class="fa-solid fa-chevron-down" id="menu_icon"></i></span>
 
             <div className='submenu'>
               <ul>
-                <a href="#ux" ><li>UX Design</li></a>
-                <li>Web Development</li>
-                <li>Brochure Designing</li>
-                <li>Visiting Card</li>
-                <li>Business Reports</li>
+              <a href="#ux"><li>UX Design</li></a>
+           <a href="#web"><li>Web Development</li></a>
+            <a href="#bro"><li>Brochure Designing</li></a>
+            <a href="#visit"><li>Business Card</li></a>
+            <a href="#busi"><li>Business Reports</li></a>
 
               </ul>
             </div>
           </li>
           {/* /---------------------------------------------------------------compilance-----------------------------------------------------/ */}
 
-          <li>Compilance<span><i class="fa-solid fa-chevron-down" id="menu_icon"></i></span>
+          <li><Link to={'/compilance'}><span style={{color:"white"}}>Compilance</span> </Link><span><i class="fa-solid fa-chevron-down" id="menu_icon"></i></span>
 
             <div className='submenu'>
               <ul>
-                <li>Accounting Services</li>
-                <li>Other Legal Services</li>
-                <li>Digital Signature</li>
-                <li>Import Export Code</li>
-                <li>Company PAN Card</li>
-                <li>Company TAN Number</li>
-                <li>Bar Code</li>
-                <li>ISO 9001</li>
-                <li>Shop Act</li>
-                <li>Fssai</li>
-                <li>ITR Filing</li>
+                <a href='#acc'><li>Accounting Services</li></a>
+                <a href="#dig"><li>Digital Signature</li></a>
+                <a href="#imp"><li>Import Export Code</li></a>
+                <a href="#com"><li>Company PAN Card</li></a>
+                <a href="#com_tan"><li>Company TAN Number</li></a>
+                <a href='#bar'><li>Bar Code</li></a>
+                <a href="#iso"><li>ISO 9001</li></a>
+                <a href="#shop"><li>Shop Act</li></a>
+                <a href="#fss"><li>Fssai</li></a>
+                <a href='#itr'><li>ITR Filing</li></a>
               </ul>
             </div>
           </li>
           {/* /-----------------------------------------------------------------trademark--------------------------------------/ */}
-          <li>Trademark<span><i class="fa-solid fa-chevron-down" id="menu_icon"></i></span>
+          <li><Link to={'/trademark'}><span style={{color:"white"}}>Trademark</span> </Link><span><i class="fa-solid fa-chevron-down" id="menu_icon"></i></span>
 
             <div className='submenu'>
               <ul>
-                <li>Trademark Registration</li>
-                <li>Trademark Objection/Hearing/Renewal</li>
-                <li>Trade License</li>
+                <a href="#tra_reg"><li>Trademark Registration</li></a>
+                <a href="#tra_renewal"><li>Trademark Objection/Hearing/Renewal</li></a>
+                <a href="#tra_lic"><li>Trade License</li></a>
 
               </ul>
             </div>
           </li>
           {/* /--------------------------------------------------------------------GST---------------------------------------------/ */}
-          <li>Gst<span><i class="fa-solid fa-chevron-down" id="menu_icon"></i></span>
+          <li><Link to={'/gst'}><span style={{color:"white"}}>GST</span> </Link><span><i class="fa-solid fa-chevron-down" id="menu_icon"></i></span>
 
             <div className='submenu'>
               <ul>
@@ -116,22 +115,22 @@ const Home_navbar = () => {
             </div>
           </li>
           {/* /--------------------------------------------------------------------registration----------------------------------------------/ */}
-          <li>Registartion<span><i class="fa-solid fa-chevron-down" id="menu_icon"></i></span>
+          <li><Link to={'/registration'}><span style={{color:"white"}}>Registration</span> </Link><span><i class="fa-solid fa-chevron-down" id="menu_icon"></i></span>
 
             <div className='submenu'>
               <ul>
-                <li>MSME(Udyam) Registration</li>
-                <li>Proprietorship Registration</li>
-                <li>Partnership Registration</li>
-                <li>Pvt ltd/LLP/OPC Registration</li>
-                <li>Professional Tax registration</li>
+                <a href="#msme"><li>MSME(Udyam) Registration</li></a>
+                <a href="#prop"><li>Proprietorship Registration</li></a>
+                <a href="#par_reg"><li>Partnership Registration</li></a>
+                <a href="#pvt"><li>Pvt ltd/LLP/OPC Registration</li></a>
+                <a href="#prp_tax"><li>Professional Tax registration</li></a>
 
 
 
               </ul>
             </div>
           </li>
-          <li>About Us</li>
+          <li><Link to={'/about'}><span style={{color:"white"}}>About</span> </Link></li>
         </ul>
 
         {
@@ -188,7 +187,7 @@ const Home_navbar = () => {
       <div className='navbar1' ref={bar}>
         <img src={logo} className="logo"></img>
         <ul>
-          <li style={{color:"#0D6EFD"}}>Home</li>
+          <a href="#"><li style={{color:"#0D6EFD"}}>Home</li></a>
           {/* /-----------------------------------------------------------services-------------------------------------------------/ */}
           <li><Link to={'/services'}><span>Services</span> </Link><span><i class="fa-solid fa-chevron-down" id="menu_icon"></i></span>
 
@@ -209,34 +208,33 @@ const Home_navbar = () => {
 
             <div className='submenu'>
               <ul>
-                <li>Accounting Services</li>
-                <li>Other Legal Services</li>
-                <li>Digital Signature</li>
-                <li>Import Export Code</li>
-                <li>Company PAN Card</li>
-                <li>Company TAN Number</li>
-                <li>Bar Code</li>
-                <li>ISO 9001</li>
-                <li>Shop Act</li>
-                <li>Fssai</li>
-                <li>ITR Filing</li>
+              <a href='#acc'><li>Accounting Services</li></a>
+                <a href="#dig"><li>Digital Signature</li></a>
+                <a href="#imp"><li>Import Export Code</li></a>
+                <a href="#com"><li>Company PAN Card</li></a>
+                <a href="#com_tan"><li>Company TAN Number</li></a>
+                <a href='#bar'><li>Bar Code</li></a>
+                <a href="#iso"><li>ISO 9001</li></a>
+                <a href="#shop"><li>Shop Act</li></a>
+                <a href="#fss"><li>Fssai</li></a>
+                <a href='#itr'><li>ITR Filing</li></a>
               </ul>
             </div>
           </li>
           {/* /-----------------------------------------------------------------trademark--------------------------------------/ */}
-          <li>Trademark<span><i class="fa-solid fa-chevron-down" id="menu_icon"></i></span>
+          <li><Link to={'/trademark'}><span >Trademark</span> </Link><span><i class="fa-solid fa-chevron-down" id="menu_icon"></i></span>
 
             <div className='submenu'>
               <ul>
-                <li>Trademark Registration</li>
-                <li>Trademark Objection/Hearing/Renewal</li>
-                <li>Trade License</li>
+                <a href="#tra_reg"><li>Trademark Registration</li></a>
+                <a href="#tra_renewal"><li>Trademark Objection/Hearing/Renewal</li></a>
+                <a href="#tra_lic"><li>Trade License</li></a>
 
               </ul>
             </div>
           </li>
           {/* /--------------------------------------------------------------------GST---------------------------------------------/ */}
-          <li>Gst<span><i class="fa-solid fa-chevron-down" id="menu_icon"></i></span>
+          <li><Link to={'/gst'}><span >Gst</span> </Link><span><i class="fa-solid fa-chevron-down" id="menu_icon"></i></span>
 
             <div className='submenu'>
               <ul>
@@ -253,22 +251,22 @@ const Home_navbar = () => {
             </div>
           </li>
           {/* /--------------------------------------------------------------------registration----------------------------------------------/ */}
-          <li>Registartion<span><i class="fa-solid fa-chevron-down" id="menu_icon"></i></span>
+          <li><Link to={'/registration'}><span >Registration</span> </Link><span><i class="fa-solid fa-chevron-down" id="menu_icon"></i></span>
 
-            <div className='submenu'>
-              <ul>
-                <li>MSME(Udyam) Registration</li>
-                <li>Proprietorship Registration</li>
-                <li>Partnership Registration</li>
-                <li>Pvt ltd/LLP/OPC Registration</li>
-                <li>Professional Tax registration</li>
+<div className='submenu'>
+  <ul>
+    <a href="#msme"><li>MSME(Udyam) Registration</li></a>
+    <a href="#prop"><li>Proprietorship Registration</li></a>
+    <a href="#par_reg"><li>Partnership Registration</li></a>
+    <a href="#pvt"><li>Pvt ltd/LLP/OPC Registration</li></a>
+    <a href="#prp_tax"><li>Professional Tax registration</li></a>
 
 
 
               </ul>
             </div>
           </li>
-          <li>About</li>
+          <li><Link to={'/about'}><span>About</span> </Link></li>
         </ul>
 
         {

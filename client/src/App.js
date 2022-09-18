@@ -12,6 +12,7 @@ import Promises from './Promises';
 import axios from 'axios'
 import { useEffect } from 'react';
 import Compilance from './Compilance';
+import Contact from './contact/Contact';
 
 
 function App() {
@@ -23,14 +24,14 @@ function App() {
       <Home_navbar></Home_navbar>
       <HomeSlider></HomeSlider>
       <Why_chooseus></Why_chooseus>
-      <Services></Services>
       <Gst></Gst>
       <Registration></Registration>
+      <Services></Services>
       <Info></Info>
       <Trademark></Trademark>
       <Promises></Promises>
       <Compilance></Compilance>
-
+     <Contact></Contact>
     </div>
   );
 }
