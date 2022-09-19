@@ -1,6 +1,6 @@
 .why_choseus{
     width: 100vw;
-    height: 110vh;
+    height: 130vh;
     background-color: rgb(255, 255, 255);
 }
 .why_choseus .head{
@@ -23,7 +23,7 @@
 }
 .why_choseus .content{
     width: 100vw;
-    height: 90vh;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,7 +31,7 @@
 }
 .why_choseus .content .why_choseus-card{
     width: 75vw;
-    height:80vh;
+    height:auto;
     display: flex;
     margin-top: 40px;
     background-color: white;
@@ -41,7 +41,7 @@
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
-.why_choseus .content .why_choseus-card .left{
+/* .why_choseus .content .why_choseus-card .left{
     width: 35vw;
 }
 .why_choseus .content .why_choseus-card .right{
@@ -49,12 +49,13 @@
     height: 80vh;
     
     
-}
+} */
 .why_choseus .content .why_choseus-card .right h2{
     font-family: 'Montserrat', sans-serif;
    padding-left: 2vh;
     color: rgb(4, 4, 54);
     font-weight: bolder;
+    
 }
 .why_choseus .content .why_choseus-card .right .box{
     width: 32vw;
@@ -67,6 +68,8 @@
     font-size: 2.3rem;
     color: rgb(4, 4, 54);
 }
+
+
 .why_choseus .content .why_choseus-card .right p{
 font-family: 'Josefin Sans', sans-serif;
 font-weight: bold;

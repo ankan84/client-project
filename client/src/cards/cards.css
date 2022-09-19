@@ -78,3 +78,14 @@ color: gray;
        
     }
 }
+
+@media(min-width:901px) and (max-width:1350px){
+    .services-card .right h1{
+        font-size: 1rem;
+        
+    }
+    .services-card .right p{
+        font-size: .7rem;
+       
+    }
+}

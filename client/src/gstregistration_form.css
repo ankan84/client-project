@@ -3,62 +3,81 @@
     margin: 0;
     box-sizing: border-box;
 }
-.gst_reg{
-    width: 100vw;
+
+
+ /* .gst_fill-main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    overflow-y: auto;
+    
+ } */
+ .gst_reg{
+    width: 100%;
     height: auto;
     background-color: rgb(240, 239, 239);
-    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .gst_reg .head{
     font-family: 'Montserrat', sans-serif;
-    width: 100vw;
+    width: 100%;
     color: gray;
-    padding-top: 5vh;
- 
+    padding-top: 10px;
+    padding-bottom: 20px;
 
 }
-.gst_reg .head h1{
-    width: 30vw;
-    margin: auto;
-}
+
 .gst_reg .content{
-    width: 100vw;
+    width: 700px;
     height: auto;
-    display: grid;
-    place-items: center;  
-   
-   
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+    place-items: center;
 }
 .gst_reg .content .inside_content{
-    width: 50vw;
-    height:auto;
+    width: 700px;
+    height: auto;
     background-color: whitesmoke;
-    /* box-shadow: 1px 1px 5px gray,-1px -1px 5px gray; */
-   
+    box-shadow: 1px 1px 5px gray,-1px -1px 5px gray;
 }
+
 .gst_reg .content .inside_content .field{
-    width: 40vw;
-    display: flex;
-    
-    margin-top: 20px;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 2vw;
+    padding-right: 30px;
 }
 .gst_reg .content .inside_content .field h5{
-    width: 17vw;
+   
+    width: 200px;
+    padding-left: 40px;
+    padding-right: 10px;
+} 
+.field input{
+    width: 200px;    
 }
-.gst_reg .content .inside_content .field .inp{
-    position: relative;
-    right: 2vw;
-    width: 20vw;
-    height: 4vh;
-    padding-left: 5px;
+
+.gst_reg .content .inside_content .field{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    margin-top: 20px;
+    
 }
+
+.input{
+    padding-right: 20px;
+}
+
 .gst_reg .content .inside_content  button{
-    width: 15vw;
-    height: 5vh;
+    width: 105px;
+    height: 40px;
     background-color: rgb(8, 142, 182);
     color: white;
     border-bottom-left-radius: 20px;
@@ -68,17 +87,28 @@
     font-weight: bolder;
     outline: none;
     border: none;
-    margin-left: 1.8vw;
-    margin-top: 4vh;
-}
+    /* margin-left: 16px; */
+    margin-top: 40px;
+    margin-bottom: 40px;
+} 
 
-
-@media screen and (max-width:750px) {
-    .gst_reg .content .inside_content {
+@media(min-width:350px) and (max-width:750px)
+{
+    .gst_reg{
         width: 100%;
-        padding-left: 24%;
         height: auto;
-}
+    }
+    .gst_reg .content{
+        width:100%;
+        height:auto;
+    }
 
-}
+    .gst_reg .content .inside_content{
+        width: 100%;
+        height: auto;
+    }
 
+    .field input{
+        width: 150px;    
+    }
+}
