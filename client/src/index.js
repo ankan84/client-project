@@ -14,7 +14,7 @@ import Trademark from './Trademark';
 import Gst from './gst/Gst';
 import Registration from './registration/Registration';
 import Admin from './admin/Admin';
-
+import CustomizedTables from './Dashboard/home';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
  <BrowserRouter>
@@ -31,6 +31,7 @@ root.render(
     <Route path="/gst" element={<Gst/>}></Route>
     <Route path="/registration" element={<Registration/>}></Route>
     <Route path="/adminpanel" element={<Admin/>}></Route>
+    <Route path="/dashboard" element={<CustomizedTables/>}></Route>
   </Routes>
  </BrowserRouter>
 );

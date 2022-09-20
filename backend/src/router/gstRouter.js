@@ -137,6 +137,22 @@ gst_router.post('/registration',async(req,res)=>{
     
 
 })
+gst_filling_router.get('/gst_fillingdetails',async(req,res)=>{
+    try {
+    const detail = await gst_filling_data.find();
+    return res.status(200).json(detail);
+    }catch(error) {
+        return res.status(404).json({message: error.message});
+    }
+});
+gst_router.get('/gst_details',async(req,res)=>{
+    try {
+    const detail = await gst_data.find();
+    return res.status(200).json(detail);
+    }catch(error) {
+        return res.status(404).json({message: error.message});
+    }
+});
 
 
 
