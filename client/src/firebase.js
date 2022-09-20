@@ -6,13 +6,14 @@ import {getAuth,GoogleAuthProvider,signInWithPopup,FacebookAuthProvider} from 'f
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDcKKSafr7Av-3DhIxK1Nsad-2znoclL5E",
-  authDomain: "auth-login-402b6.firebaseapp.com",
-  projectId: "auth-login-402b6",
-  storageBucket: "auth-login-402b6.appspot.com",
-  messagingSenderId: "725818933277",
-  appId: "1:725818933277:web:96104ff7f683064cfc46f4",
-  measurementId: "G-SDR1K2FZ01"
+    apiKey: "AIzaSyCFrW_FoeFCJf8hW-0ASV_nOqlitlbOvWQ",
+    authDomain: "auth-login-5b265.firebaseapp.com",
+    projectId: "auth-login-5b265",
+    storageBucket: "auth-login-5b265.appspot.com",
+    messagingSenderId: "676108054373",
+    appId: "1:676108054373:web:e1e96a2673e05179b93b8c",
+    measurementId: "G-PVMMF224P3"
+  
 };
 
 // Initialize Firebase

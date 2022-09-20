@@ -93,13 +93,18 @@ router.get('/check_user',verify,async(req,res)=>{
 router.post('/logout',async(req,res)=>{
 
     try{
-        console.log("hello")
+          res.clearCookie('accessToken')
        
-            res.cookie("accessToken","#none", {
+            res.cookie('accessToken',"#none", {
                httpOnly:false
             });
+            res.clearCookie('accessToken')
+            res.cookie('accessToken',"#none", {
+                httpOnly:false
+             });
             res.send()
     }catch(e){
+
         res.status(400).send()
     }
    

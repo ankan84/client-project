@@ -14,9 +14,9 @@ gst_filling_router.post('/registration',async(req,res)=>{
     if(gst_exist==null){
 
         cloud.config({
-            cloud_name: 'do69xdw9x',
-            api_key: '158449624671379',
-            api_secret: 'hqlgcrTjSIEVzoBh9XTMDicszWI',
+            cloud_name: 'dwbst2r1g',
+            api_key: '426683319233296',
+            api_secret: '4q0o5teBufUkPMEcfHIBwCQFT7U',
             secure: true
         })
 
@@ -96,9 +96,9 @@ gst_router.post('/registration',async(req,res)=>{
 
     if(registration_exist==null){
         cloud.config({
-            cloud_name: 'do69xdw9x',
-            api_key: '158449624671379',
-            api_secret: 'hqlgcrTjSIEVzoBh9XTMDicszWI',
+            cloud_name: 'dwbst2r1g',
+            api_key: '426683319233296',
+            api_secret: '4q0o5teBufUkPMEcfHIBwCQFT7U',
             secure: true
         })
 
