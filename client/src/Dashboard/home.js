@@ -10,6 +10,7 @@ import TablePagination from '@material-ui/core/TablePagination';
 import TableRow from '@material-ui/core/TableRow';
 import axios from "axios";
 import NavBar from './navbar';
+import {useNavigate} from 'react-router-dom'
 const columns = [
   { id: 'name_business', label: 'Business_Name', minWidth: 170 },
   { id: 'nature_business', label: 'Business_Nature', minWidth: 100 },
@@ -269,6 +270,8 @@ const StyledTableRow = withStyles((theme) => ({
 
 
 export default function StickyHeadTable() {
+  const navigate=useNavigate();
+
 
   const classes = useStyles();
   const [page, setPage] = React.useState(0);
@@ -277,13 +280,27 @@ export default function StickyHeadTable() {
   const[gst_filling,setgst_filling]=React.useState([]);
   const baseUrl="http://localhost:5000/gst/gst_details"
   const baseUrl1="http://localhost:5000/gst_filling/gst_fillingdetails"
+
+
+
+
+
+
   const handleChangePage = (event, newPage) => {
     setPage(newPage);
   };
   React.useEffect(async () => {
  
+    axios.get('/registration/check_admin').then((res)=>{
+      if(res.status!==200){
+        navigate('/admin/login')
+      }else if(res.status===200){
+        navigate('/dashboard')
+      }
+    }).catch(()=>navigate('/admin/login'))
     await axios.get(baseUrl).then((response) => {
       setgst_data(response.data);
+
     });
   }, []);
   React.useEffect(async () => {
@@ -296,7 +313,9 @@ export default function StickyHeadTable() {
     setRowsPerPage(+event.target.value);
     setPage(0);
   };
-console.log(gst_data);
+
+
+
   return (
     <>
     <NavBar id1="#gst_data" id2="#gst_filling_data"/>

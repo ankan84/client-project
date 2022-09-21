@@ -5,6 +5,7 @@ const user_data = require('../registration/schema');
 const bcrypt=require('bcrypt')
 const jwt=require('jsonwebtoken');
 const verify=require('../access/userAccess')
+const admin_verify=require('../access/adminAccess')
 
 
 
@@ -89,6 +90,40 @@ router.get('/check_user',verify,async(req,res)=>{
    
 
 })
+
+router.post('/admin/signin',async(req,res)=>{
+      try{
+         const {email,password}=req.body;
+         if(email=='pavanconsultancy5655@gmail.com'&& password=='672576726615'){
+            let token_data=await jwt.sign({id:email},process.env.token);
+                
+            if(token_data){
+             res.cookie("accessToken",token_data, {
+                 expiresIn: '2h',
+                 httpOnly: true
+             });
+            }
+
+            res.status(200).send('Pavan')
+         }else{
+            res.status(400).send("Wrong password")
+         }
+      }catch(e){
+        res.status(400).send()
+      }
+})
+
+
+router.get('/check_admin',admin_verify,async(req,res)=>{
+    try{
+        res.status(200).send("login successful")
+    }catch(e){
+        res.status(400).send(e);
+    }
+   
+
+})
+
 
 router.post('/logout',async(req,res)=>{
 
