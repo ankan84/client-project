@@ -278,8 +278,8 @@ export default function StickyHeadTable() {
   const [rowsPerPage, setRowsPerPage] = React.useState(10);
   const[gst_data,setgst_data]=React.useState([]);
   const[gst_filling,setgst_filling]=React.useState([]);
-  const baseUrl="http://localhost:5000/gst/gst_details"
-  const baseUrl1="http://localhost:5000/gst_filling/gst_fillingdetails"
+  const baseUrl="http://www.pavantaxconsultants.com:5000/gst/gst_details"
+  const baseUrl1="http://www.pavantaxconsultants.com:5000/gst_filling/gst_fillingdetails"
 
 
 

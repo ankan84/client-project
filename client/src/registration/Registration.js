@@ -4,6 +4,7 @@ import apiData from '../registration/apidata'
 import { Item1 } from '../gst/Gst'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import url from '../config'
 function Registration() {
   useEffect(() => {
       

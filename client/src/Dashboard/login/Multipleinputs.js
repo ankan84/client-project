@@ -4,6 +4,7 @@ import pic from './login_img.png'
 import google_pic from './gg-pic3.png'
 import fb_pic from './ff_pic.png'
 import axios from 'axios'
+// import url from '.../admin'
 
 import { useNavigate } from 'react-router-dom'
 
@@ -28,8 +29,9 @@ const Multipleinputs = () => {
         e.preventDefault();
 
 
+        const url ="http://www.pavantaxconsultants.com:5000"
 
-        axios.post('/registration/admin/signin', { email: userLogin.email, password: userLogin.password }).then((res) => {
+        axios.post(url+'/registration/admin/signin', { email: userLogin.email, password: userLogin.password }).then((res) => {
             if (res.status === 200) {
                 navigate('/dashboard')
             } else {

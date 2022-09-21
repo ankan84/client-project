@@ -19,7 +19,7 @@ const Signup = () => {
 
     
         if(password===Re_password){
-        axios.post('/registration/user/signup',{name,phone_no,email,password}).then((res)=>{
+        axios.post(url+'/registration/user/signup',{name,phone_no,email,password}).then((res)=>{
             if(res.status===201){
                 alert('Successfull login now')
                 navigate('/login')

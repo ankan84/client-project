@@ -130,7 +130,7 @@ const Home_navbar = () => {
               </ul>
             </div>
           </li>
-          <li><Link to={'/about'}><span style={{color:"white"}}>About</span> </Link></li>
+          <li><Link to={'/admin/login'}><span style={{color:"white"}}>Dashboard</span> </Link></li>
         </ul>
 
         {
@@ -150,6 +150,7 @@ const Home_navbar = () => {
             
           </>) : (<><button className='btn2' onClick={Sign}>Sign Up</button>
             <button className='btn3' onClick={login}>Log In</button>
+            
           </>)
         }
         </div>
@@ -266,7 +267,7 @@ const Home_navbar = () => {
               </ul>
             </div>
           </li>
-          <li><Link to={'/about'}><span>About</span> </Link></li>
+          <li><Link to={'/admin/login'}><span>Dashboard</span> </Link></li>
         </ul>
 
         {

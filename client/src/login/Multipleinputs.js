@@ -39,7 +39,7 @@ const Multipleinputs = () => {
 
 
 
-        axios.post('/registration/user/signin', { email: userLogin.email, password: userLogin.password }).then((res) => {
+        axios.post(url+'/registration/user/signin', { email: userLogin.email, password: userLogin.password }).then((res) => {
             if (res.status === 200) {
                 navigate('/')
             } else {

@@ -9,6 +9,7 @@ import ViewCompactIcon from '@mui/icons-material/ViewCompact';
 import { Outlet, Link } from "react-router-dom";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import url from '../config'
 function Gst() {
     
     useEffect(() => {

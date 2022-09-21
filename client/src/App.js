@@ -13,7 +13,7 @@ import axios from 'axios'
 import { useEffect } from 'react';
 import Compilance from './Compilance';
 import Contact from './contact/Contact';
-
+import StickyHeadTable from './Dashboard/home';
 
 function App() {
 
@@ -31,6 +31,7 @@ function App() {
       <Trademark></Trademark>
       <Promises></Promises>
       <Compilance></Compilance>
+      
      <Contact></Contact>
     </div>
   );

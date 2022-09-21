@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './gstregistration_form.css';
 import axios from 'axios'
 import Loader from './loader/Loader'
+import url from './config'
 
 const Gstregis_form = () => {
 
@@ -50,7 +51,7 @@ const Gstregis_form = () => {
     e.preventDefault();
     setLoding(true)
 
-    axios.post('/gst/registration',formdata).then((res)=>{
+    axios.post(url+'/gst/registration',formdata).then((res)=>{
     
         setLoding(false)
         

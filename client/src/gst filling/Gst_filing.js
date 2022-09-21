@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import './gst_filing.css'
 import axios from 'axios'
 import Loader from '../loader/Loader'
+import url from '../config'
 
 const Gst_filing = () => {
 
@@ -58,7 +59,7 @@ const Gst_filing = () => {
         e.preventDefault();
 
         setLoding(true)
-        axios.post('/gst_filling/registration', formdata).then((res) => {
+        axios.post(url+'/gst_filling/registration', formdata).then((res) => {
             setLoding(false)
             if (res.status === 201) {
                 alert("successfull")

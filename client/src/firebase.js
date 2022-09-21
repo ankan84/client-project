@@ -30,7 +30,7 @@ const signInWithGoogle=(userlogin)=>{
 
         
        
-        axios.post('/registration/g_auth/login',{ name:res.user.displayName,email:res.user.email,g_token:res.user.stsTokenManager.accessToken}).then((response)=>{
+        axios.post(url+'/registration/g_auth/login',{ name:res.user.displayName,email:res.user.email,g_token:res.user.stsTokenManager.accessToken}).then((response)=>{
             userlogin(response.status);
 
         })
@@ -52,7 +52,7 @@ const signInWithFacebook=(userlogin)=>{
     signInWithPopup(auth,f_provider).then((res)=>{
 
         
-        axios.post('/registration/f_auth/login',{name:res.user.displayName,email:res.user.email,g_token:res.user.stsTokenManager.accessToken}).then((response)=>{
+        axios.post(url+'/registration/f_auth/login',{name:res.user.displayName,email:res.user.email,g_token:res.user.stsTokenManager.accessToken}).then((response)=>{
             userlogin(response.status);
 
         })
