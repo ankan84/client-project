@@ -33,6 +33,7 @@ const Multipleinputs = () => {
 
         axios.post(url+'/registration/admin/signin', { email: userLogin.email, password: userLogin.password }).then((res) => {
             if (res.status === 200) {
+		console.log("verified");
                 navigate('/dashboard')
             } else {
                 alert('somthings wrong ')

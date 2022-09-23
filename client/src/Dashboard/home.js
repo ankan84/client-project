@@ -289,15 +289,7 @@ export default function StickyHeadTable() {
   const handleChangePage = (event, newPage) => {
     setPage(newPage);
   };
-  React.useEffect(async () => {
- 
-    axios.get('/registration/check_admin').then((res)=>{
-      if(res.status!==200){
-        navigate('/admin/login')
-      }else if(res.status===200){
-        navigate('/dashboard')
-      }
-    }).catch(()=>navigate('/admin/login'))
+  React.useEffect(async () =>{
     await axios.get(baseUrl).then((response) => {
       setgst_data(response.data);
 

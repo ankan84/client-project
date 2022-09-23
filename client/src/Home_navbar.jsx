@@ -148,8 +148,8 @@ const Home_navbar = () => {
             
           }}></LogoutIcon></div>
             
-          </>) : (<><button className='btn2' onClick={Sign}>Sign Up</button>
-            <button className='btn3' onClick={login}>Log In</button>
+          </>) : (<><button className='btn2' >Sign Up</button>
+            <button className='btn3' >Log In</button>
             
           </>)
         }
@@ -282,8 +282,8 @@ const Home_navbar = () => {
             
           }}></LogoutIcon></div>
             
-          </>) : (<><button className='btn2' onClick={Sign}>Sign Up</button>
-            <button className='btn3' onClick={login}>Log In</button>
+          </>) : (<><button className='btn2' >Sign Up</button>
+            <button className='btn3' >Log In</button>
           </>)
         }
       </div>
