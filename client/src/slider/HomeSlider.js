@@ -1,7 +1,7 @@
 import React from 'react'
 import './homeSlider.css'
 
-import {Slider1,Slider2,Slider3} from '../slider/Slider1'
+import {Slider0,Slider1,Slider2,Slider3} from '../slider/Slider1'
 function HomeSlider() {
   return (<>
 
@@ -9,7 +9,11 @@ function HomeSlider() {
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         
         <div class="carousel-inner">
-          <div class="carousel-item active">
+        <div class="carousel-item active">
+
+          <Slider0></Slider0>
+          </div>
+          <div class="carousel-item">
 
           <Slider1></Slider1>
           </div>
