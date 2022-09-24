@@ -53,20 +53,6 @@ const Home_navbar = () => {
     <div className="navigation-manu-lower">
     <ul>
           <a href='#' style={{textDecoration:"none"}}><li style={{color:"white"}}>Home</li></a>
-          {/* /-----------------------------------------------------------services-------------------------------------------------/ */}
-          <li><Link to={'/services'}><span style={{color:"white"}}>Services</span> </Link><span><i class="fa-solid fa-chevron-down" id="menu_icon"></i></span>
-
-            <div className='submenu'>
-              <ul>
-              <a href="#ux"><li>UX Design</li></a>
-           <a href="#web"><li>Web Development</li></a>
-            <a href="#bro"><li>Brochure Designing</li></a>
-            <a href="#visit"><li>Business Card</li></a>
-            <a href="#busi"><li>Business Reports</li></a>
-
-              </ul>
-            </div>
-          </li>
           {/* /---------------------------------------------------------------compilance-----------------------------------------------------/ */}
 
           <li><Link to={'/compilance'}><span style={{color:"white"}}>Compilance</span> </Link><span><i class="fa-solid fa-chevron-down" id="menu_icon"></i></span>
@@ -130,6 +116,25 @@ const Home_navbar = () => {
               </ul>
             </div>
           </li>
+          {/* /-----------------------------------------------------------services-------------------------------------------------/ */}
+          <li><Link to={'/services'}><span style={{color:"white"}}>Services</span> </Link><span><i class="fa-solid fa-chevron-down" id="menu_icon"></i></span>
+
+            <div className='submenu'>
+              <ul>
+              <a href="#ux"><li>UX Design</li></a>
+           <a href="#web"><li>Web Development</li></a>
+            <a href="#bro"><li>Brochure Designing</li></a>
+            <a href="#visit"><li>Business Card</li></a>
+            <a href="#busi"><li>Business Reports</li></a>
+
+              </ul>
+            </div>
+          </li>
+         {/* -------------------------------------------------------------contact---------------------------------------------------- */}
+         <li><Link to={'/contact'}><span style={{color:"white"}}>Contact</span></Link></li>
+          
+          
+          
           <li><Link to={'/admin/login'}><span style={{color:"white"}}>Dashboard</span> </Link></li>
         </ul>
 
@@ -189,20 +194,6 @@ const Home_navbar = () => {
         <img src={logo} className="logo"></img>
         <ul>
           <a href="#"><li style={{color:"#0D6EFD"}}>Home</li></a>
-          {/* /-----------------------------------------------------------services-------------------------------------------------/ */}
-          <li><Link to={'/services'}><span>Services</span> </Link><span><i class="fa-solid fa-chevron-down" id="menu_icon"></i></span>
-
-            <div className='submenu'>
-              <ul>
-              <a href="#ux"><li>UX Design</li></a>
-           <a href="#web"><li>Web Development</li></a>
-            <a href="#bro"><li>Brochure Designing</li></a>
-            <a href="#visit"><li>Business Card</li></a>
-            <a href="#busi"><li>Business Reports</li></a>
-
-              </ul>
-            </div>
-          </li>
           {/* /---------------------------------------------------------------compilance-----------------------------------------------------/ */}
 
           <li><Link to={'/compilance'}><span>Compilance</span> </Link><span><i class="fa-solid fa-chevron-down" id="menu_icon"></i></span>
@@ -267,6 +258,25 @@ const Home_navbar = () => {
               </ul>
             </div>
           </li>
+          {/* /-----------------------------------------------------------services-------------------------------------------------/ */}
+          <li><Link to={'/services'}><span>Other Services</span> </Link><span><i class="fa-solid fa-chevron-down" id="menu_icon"></i></span>
+
+            <div className='submenu'>
+              <ul>
+              <a href="#ux"><li>UX Design</li></a>
+           <a href="#web"><li>Web Development</li></a>
+            <a href="#bro"><li>Brochure Designing</li></a>
+            <a href="#visit"><li>Business Card</li></a>
+            <a href="#busi"><li>Business Reports</li></a>
+
+              </ul>
+            </div>
+          </li>
+          
+          {/* /-----------------------------------------------------------Contact-------------------------------------------------/ */}
+          <li><Link to={'/contact'}><span>Contact</span> </Link><span></span></li>
+          
+          
           <li><Link to={'/admin/login'}><span>Dashboard</span> </Link></li>
         </ul>
 

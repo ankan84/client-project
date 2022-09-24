@@ -26,12 +26,12 @@ function App() {
       <Why_chooseus></Why_chooseus>
       <Gst></Gst>
       <Registration></Registration>
-      <Services></Services>
+     
       <Info></Info>
       <Trademark></Trademark>
       <Promises></Promises>
       <Compilance></Compilance>
-      
+      <Services></Services>
      <Contact></Contact>
     </div>
   );

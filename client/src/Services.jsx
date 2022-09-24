@@ -24,7 +24,7 @@ const Services = () => {
   return (
     <div className='services'> 
     <div className='head'>
-       <h1 data-aos="zoom-in" data-aos-duration="1000" >Our Services</h1>
+       <h1 data-aos="zoom-in" data-aos-duration="1000" >Other Services</h1>
 </div>
 <div className='content'>
 {/* /-------------------------------------------------------------------------card1-----------------------------------------------------/ */}

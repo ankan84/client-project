@@ -43,3 +43,26 @@ box-shadow: 1px 1px 5px gray,-1px -1px 5px gray;
     color: rgb(4, 4, 54);
     font-weight: bolder;
 }
+.contact .content .right span{
+color: rgb(0, 10, 8);
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+@media(min-width:470px) and (max-width:1150px){
+    .contact .content .right{
+        font-size: .7rem;
+    }
+    .contact .content .right span{
+       
+            font-size: .9rem;
+        }
+}
+@media(min-width:1150px) and (max-width:1384px){
+    .contact .content .right{
+        font-size: .8rem;
+    }
+    .contact .content .right span{
+       
+            font-size: 1rem;
+        }
+}
